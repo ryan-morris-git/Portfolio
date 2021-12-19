@@ -1,0 +1,16 @@
+.intro-head {
+    margin-top:80px;
+    margin-left: 50px;
+    animation: transitionIn 1s;
+}
+#intro {
+  background-image: linear-gradient(to top, rgba(201, 219, 255, 0), rgba(201, 219, 255, 1));
+  width: 100%;
+}
+
+.picofme {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  animation: transitionIn 1s;
+}

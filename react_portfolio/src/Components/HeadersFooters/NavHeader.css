@@ -1,0 +1,11 @@
+#nav-header {
+    background-image: linear-gradient(to top, rgba(201, 219, 255, 1), rgb(182, 197, 229));
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 10%;
+}
+
+.nav-item {
+    padding: 0 5% 0 5%;
+}
