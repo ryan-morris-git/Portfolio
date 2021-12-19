@@ -7,9 +7,5 @@ class Project(db.Model):
     link            = db.Column("link", db.String())
     github_link     = db.Column("github_link", db.String())
 
-    def __init__(self, id, title, description, link, github_link):
-        self.id = id
-        self.title = title
-        self.description = description
-        self.link = link
-        self.github_link = github_link
+    def __repr__(self):
+        return '<Project %r>' % self.id

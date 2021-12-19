@@ -6,8 +6,6 @@ class Technologies(db.Model):
     project_id  = db.Column("project_id", db.Integer, db.ForeignKey(Project.id))
     technology  = db.Column("title", db.String())
 
-    def __init__(self, id, project_id, technology):
-        self.id = id
-        self.project_id = project_id
-        self.technology = technology
+    def __repr__(self):
+        return '<Technologies %r>' % self.id
         
