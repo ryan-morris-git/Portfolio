@@ -1,4 +1,4 @@
-from main import db
+from app import db
 
 class Project(db.Model):
     id              = db.Column("id", db.Integer, primary_key=True)
@@ -9,3 +9,6 @@ class Project(db.Model):
 
     def __repr__(self):
         return '<Project %r>' % self.id
+
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}

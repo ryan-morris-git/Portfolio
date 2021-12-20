@@ -9,9 +9,10 @@ function App() {
   const [projects, getProjects] = useState([])
 
   useEffect(() => {
-    fetch('/projects').then(res => res.json()).then(data => {
-      getProjects(data);
-    });
+    fetch('/projects', {headers: {'Content-Type': 'application/json'}, mode: "no-cors"}).then(res => res.json()).then(data => {
+      console.log(data.projects)
+      getProjects(data.projects);
+    }).catch((err) => console.log(err));
   }, []);
 
   return (
@@ -20,7 +21,7 @@ function App() {
       <PortfolioHeader />
       <HomeBody />
       <Footer />
-      <p>Projects are: {projects}</p>
+      {projects.map(project => <p>{project.title}</p>)}
     </div>
   );
 }
