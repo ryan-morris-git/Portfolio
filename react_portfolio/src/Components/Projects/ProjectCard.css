@@ -1,0 +1,17 @@
+.projectCard {
+    word-wrap: break-word;
+    min-width: 18rem;
+    max-width: 24rem;
+}
+
+.projectCard:hover {
+    background-color: #ebf2fc;
+}
+
+.projectFilter {
+    min-width: 100%;
+}
+
+.projectFilterDropdown {
+    min-width: 100%;
+}

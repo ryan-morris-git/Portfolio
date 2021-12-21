@@ -45,9 +45,9 @@ function HomeBody() {
                     <Card.Title>Other Technologies</Card.Title>
                   </Card.Body>
                   <ListGroup className="list-group-flush">
-                    <ListGroup.Item action href="">Google Cloud Platform</ListGroup.Item>
-                    <ListGroup.Item action href="">Unit Testing</ListGroup.Item>
-                    <ListGroup.Item action href="">Wireframing</ListGroup.Item>
+                    <ListGroup.Item>Google Cloud Platform</ListGroup.Item>
+                    <ListGroup.Item>Unit Testing</ListGroup.Item>
+                    <ListGroup.Item>Wireframing</ListGroup.Item>
                   </ListGroup>
                 </Card>
             </Col>

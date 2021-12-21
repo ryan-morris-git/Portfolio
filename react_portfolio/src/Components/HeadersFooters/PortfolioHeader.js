@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router';
 import './PortfolioHeader.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -8,6 +9,14 @@ import Button from 'react-bootstrap/Button';
 import photoOfMe from "../../images/pic.jpg"
 
 function PortfolioHeader() {
+
+  const currentPage = window.location.pathname;
+  let isProjects = false;
+  if (currentPage === "/projects") {
+    isProjects = true;
+  } else {
+    isProjects = false;
+  }
 
   return (
     <Container fluid id="intro">
@@ -24,7 +33,10 @@ function PortfolioHeader() {
               <p className="education">
                 Full-stack developer with a Bachelor of Information Technology and a Bachelor of Business.
               </p>
-              <Button variant="outline-dark" className="mt-4">See all my Projects</Button>
+              {isProjects
+                ? <p></p>
+                : <Button variant="outline-dark" className="mt-4" href="/projects">See all my Projects</Button>
+              }
           </Col>
       </Row>
     </Container>
