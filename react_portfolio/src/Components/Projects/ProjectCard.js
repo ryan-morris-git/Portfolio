@@ -7,7 +7,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-
 function ProjectCard() {
     
     const [currentFilter, setCurrentFilter] = useState("Filters");
@@ -51,6 +50,8 @@ function ProjectCard() {
                             <Dropdown.Item onClick={(e) => changeFilter(e.target.textContent)}>Python</Dropdown.Item>
                             <Dropdown.Item onClick={(e) => changeFilter(e.target.textContent)}>Flask</Dropdown.Item>
                             <Dropdown.Item onClick={(e) => changeFilter(e.target.textContent)}>SQL</Dropdown.Item>
+                            <Dropdown.Divider/>
+                            <Dropdown.Item onClick={(e) => changeFilter("Filters")}>All Projects</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </Col>

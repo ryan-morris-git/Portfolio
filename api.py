@@ -9,10 +9,7 @@ def index():
 
 @app.route("/get_projects", methods=["GET", "POST"])
 def projects():
-
     language = request.args.get("language", None)
-
-    print(language)
 
     projects = Project().query.all()
     technologies = Technologies().query.all()
@@ -31,6 +28,21 @@ def projects():
         all_projects = [p for p in all_projects if language in p["technologies"]]
 
     return {"projects": all_projects}
+
+@app.route("/send_email", methods=["POST"])
+def send_email():
+    print(request.get_json())
+    payload = request.get_json()
+    name = payload.name
+    email = payload.email
+    message = payload.message
+
+    print(f"\n\n{name}\n{message}\n{email}")
+
+    print(f"your name is {name}")
+
+    return ""
+
 
 if __name__== '__main__':
     app.run(host="127.0.0.1", port=5000)
