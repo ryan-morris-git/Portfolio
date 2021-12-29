@@ -1,4 +1,4 @@
-from flask import jsonify
+from flask import request
 from app import app
 from app.database.Models.Project import Project
 from app.database.Models.Technologies import Technologies
@@ -7,8 +7,13 @@ from app.database.Models.Technologies import Technologies
 def index():
     return "Hi"
 
-@app.route("/get_projects", methods=["GET"])
+@app.route("/get_projects", methods=["GET", "POST"])
 def projects():
+
+    language = request.args.get("language", None)
+
+    print(language)
+
     projects = Project().query.all()
     technologies = Technologies().query.all()
 
@@ -20,6 +25,10 @@ def projects():
         for technology in all_technologies:
             if technology["project_id"] == project["id"]:
                 project["technologies"].append(technology["technology"])
+                project["technologies"] = sorted(project["technologies"])
+
+    if language and language not in ["Filters", "undefined"]:
+        all_projects = [p for p in all_projects if language in p["technologies"]]
 
     return {"projects": all_projects}
 

@@ -12,17 +12,21 @@ function ProjectCard() {
     
     const [currentFilter, setCurrentFilter] = useState("Filters");
     
-    const changeFilter = (filter) =>   {
-        console.log(filter);
+    const changeFilter = (filter) => {
         setCurrentFilter(filter);
+        getProjectList(filter);
+    }
+
+    const getProjectList = (filter) => {
+        fetch(`/get_projects?language=${filter}`, {headers: {'Content-Type': 'application/json'}, mode: "no-cors"}).then(res => res.json()).then(data => {
+            getProjects(data.projects);
+        }).catch((err) => console.log(err));
     }
     
     const [projects, getProjects] = useState([]);
     
     useEffect(() => {
-        fetch('/get_projects', {headers: {'Content-Type': 'application/json'}, mode: "no-cors"}).then(res => res.json()).then(data => {
-        getProjects(data.projects);
-        }).catch((err) => console.log(err));
+        getProjectList();
     }, []);
 
     return (
@@ -39,7 +43,8 @@ function ProjectCard() {
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu className="projectFilterDropdown">
-                            <Dropdown.Item onClick={(e) => changeFilter(e.target.textContent)}>HTML/CSS/JavaScript</Dropdown.Item>
+                            <Dropdown.Item onClick={(e) => changeFilter(e.target.textContent)}>HTML/CSS</Dropdown.Item>
+                            <Dropdown.Item onClick={(e) => changeFilter(e.target.textContent)}>JavaScript</Dropdown.Item>
                             <Dropdown.Item onClick={(e) => changeFilter(e.target.textContent)}>Vue.js</Dropdown.Item>
                             <Dropdown.Item onClick={(e) => changeFilter(e.target.textContent)}>React</Dropdown.Item>
                             <Dropdown.Divider/>
