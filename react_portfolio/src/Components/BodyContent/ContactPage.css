@@ -1,0 +1,10 @@
+#social_icon {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+#social_icon:hover {
+    transform: scale(1.2);
+}
