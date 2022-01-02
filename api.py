@@ -1,13 +1,13 @@
 from flask import request
-from app import app
+from app import app as application
 from app.database.Models.Project import Project
 from app.database.Models.Technologies import Technologies
 
-@app.route("/", methods=["GET"])
+@application.route("/", methods=["GET"])
 def index():
     return ""
 
-@app.route("/get_projects", methods=["GET", "POST"])
+@application.route("/get_projects", methods=["GET", "POST"])
 def projects():
     language = request.args.get("language", None)
 
@@ -30,4 +30,4 @@ def projects():
     return {"projects": all_projects}
 
 if __name__== '__main__':
-    app.run()
+    application.run()
