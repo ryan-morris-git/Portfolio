@@ -1,5 +1,4 @@
-import React, {useState, setState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import './ContactPage.css';
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -7,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 
 function ContactPage() {
     

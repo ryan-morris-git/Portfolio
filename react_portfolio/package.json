@@ -19,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://portfolio-backend-gc97c.ondigitalocean.app",
+  "proxy": "portfolio-backend-gc97c.ondigitalocean.app/",
+  "homepage": "ryan-morris.me",
   "eslintConfig": {
     "extends": [
       "react-app",

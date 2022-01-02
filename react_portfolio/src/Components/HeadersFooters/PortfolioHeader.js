@@ -1,5 +1,4 @@
 import React from 'react';
-import { useLocation } from 'react-router';
 import './PortfolioHeader.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
