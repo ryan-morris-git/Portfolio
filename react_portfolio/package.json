@@ -50,5 +50,8 @@
     "react-bootstrap": "^2.0.3",
     "react-router-dom": "^6.2.1",
     "web-vitals": "^2.1.2"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
   }
 }
