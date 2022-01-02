@@ -19,6 +19,9 @@ function NavHeader() {
                         <Nav.Link href="/projects">PROJECTS</Nav.Link>
                     </Nav.Item>
                     <Nav.Item className="nav-item">
+                        <Nav.Link href="/resume">RESUME</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item className="nav-item">
                         <Nav.Link href="/contact">CONTACT</Nav.Link>
                     </Nav.Item>
                 </Nav>
