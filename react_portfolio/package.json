@@ -22,7 +22,7 @@
     "heroku-postbuild": "npm run build"
   },
   "proxy": "portfolio-backend-gc97c.ondigitalocean.app/",
-  "homepage": "https://portfolio-ix7rm.ondigitalocean.app/",
+  "homepage": ".",
   "eslintConfig": {
     "extends": [
       "react-app",
