@@ -29,7 +29,7 @@ function Resume() {
                     <h4 className="mt-4 text-center">Bachelor of Business</h4>
                     <h6 className="text-center">Majored in Entrepreneurship & Self-Employment</h6>
                     <p className="text-center employment-time">2021</p>
-                    <p className="text-center">Achieved alongside the Bachelor of Business as part of a double degree program at Griffith University.</p>
+                    <p className="text-center">Achieved alongside the Bachelor of Information Technology as part of a double degree program at Griffith University.</p>
                 </Col>
             </Row>
         </Container>
