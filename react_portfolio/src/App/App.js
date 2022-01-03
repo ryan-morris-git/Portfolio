@@ -16,10 +16,10 @@ function App() {
       <PortfolioHeader />
       <Router>
         <Routes>
-          <Route exact path="/"><HomeBody /> </Route>
-          <Route exact path="/projects"> <ProjectCard /> </Route>
-          <Route exact path="/resume"> <Resume /> </Route>
-          <Route exact path="/contact"> <ContactPage /> </Route>
+          <Route exact path="/" element={<HomeBody/>} />
+          <Route exact path="/projects" element={<ProjectCard/>} />
+          <Route exact path="/resume" element={<Resume/>} />
+          <Route exact path="/contact" element={<ContactPage/>} />
         </Routes>
       </Router>
       <Footer />
