@@ -14,7 +14,7 @@ function App() {
     <div className="Portfolio">
       <NavHeader />
       <PortfolioHeader />
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Routes>
           <Route exact path="/" element={<HomeBody/>} />
           <Route exact path="/projects" element={<ProjectCard/>} />
