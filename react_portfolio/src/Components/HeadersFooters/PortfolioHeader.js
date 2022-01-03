@@ -9,10 +9,10 @@ import photoOfMe from "../../images/pic.jpg"
 
 function PortfolioHeader() {
 
-  const currentPage = window.location.pathname;
+  const currentPage = window.location.hash;
   console.log(currentPage)
   let isProjects = false;
-  if (currentPage === "/#/projects") {
+  if (currentPage === "#/projects") {
     isProjects = true;
   } else {
     isProjects = false;
