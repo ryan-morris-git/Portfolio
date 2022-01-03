@@ -21,9 +21,9 @@ function HomeBody() {
                     <Card.Title>Frontend</Card.Title>
                   </Card.Body>
                   <ListGroup className="list-group-flush">
-                    <ListGroup.Item action href="/projects">HTML/CSS/JavaScript</ListGroup.Item>
-                    <ListGroup.Item action href="/projects">Vue.js</ListGroup.Item>
-                    <ListGroup.Item action href="/projects">React</ListGroup.Item>
+                    <ListGroup.Item action href="/#/projects">HTML/CSS/JavaScript</ListGroup.Item>
+                    <ListGroup.Item action href="/#/projects">Vue.js</ListGroup.Item>
+                    <ListGroup.Item action href="/#/projects">React</ListGroup.Item>
                   </ListGroup>
                 </Card>
             </Col>
@@ -33,9 +33,9 @@ function HomeBody() {
                     <Card.Title>Backend</Card.Title>
                   </Card.Body>
                   <ListGroup className="list-group-flush">
-                    <ListGroup.Item action href="/projects">Python</ListGroup.Item>
-                    <ListGroup.Item action href="/projects">Flask</ListGroup.Item>
-                    <ListGroup.Item action href="/projects">SQL</ListGroup.Item>
+                    <ListGroup.Item action href="/#/projects">Python</ListGroup.Item>
+                    <ListGroup.Item action href="/#/projects">Flask</ListGroup.Item>
+                    <ListGroup.Item action href="/#/projects">SQL</ListGroup.Item>
                   </ListGroup>
                 </Card>
             </Col>
