@@ -11,7 +11,7 @@ function PortfolioHeader() {
 
   const currentPage = window.location.pathname;
   let isProjects = false;
-  if (currentPage === "/projects") {
+  if (currentPage === "/#/projects") {
     isProjects = true;
   } else {
     isProjects = false;
