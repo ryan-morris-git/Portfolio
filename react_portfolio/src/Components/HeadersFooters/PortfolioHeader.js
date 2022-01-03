@@ -34,7 +34,7 @@ function PortfolioHeader() {
               </p>
               {isProjects
                 ? <p></p>
-                : <Button variant="outline-dark" className="mt-4" href="/projects">See all my Projects</Button>
+                : <Button variant="outline-dark" className="mt-4" href="/#/projects">See all my Projects</Button>
               }
           </Col>
       </Row>
