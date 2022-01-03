@@ -1,4 +1,4 @@
-from flask import request, Response
+from flask import request
 from app import app as application
 from app.database.Models.Project import Project
 from app.database.Models.Technologies import Technologies
@@ -27,11 +27,7 @@ def projects():
     if language and language not in ["Filters", "undefined"]:
         all_projects = [p for p in all_projects if language in p["technologies"]]
 
-    resp = Response({"projects": all_projects})
-    resp.headers['Access-Control-Allow-Origin'] = '*'
-    resp.headers['Content-Type'] = 'application/json'
-
-    return resp
+    return {"projects": all_projects}
 
 if __name__== '__main__':
     application.run()
