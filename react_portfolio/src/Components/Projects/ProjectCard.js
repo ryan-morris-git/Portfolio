@@ -17,7 +17,7 @@ function ProjectCard() {
     }
 
     const getProjectList = (filter) => {
-        fetch(`https://portfolio-backend-gc97c.ondigitalocean.app/get_projects?language=${filter}`, {headers: {'Content-Type': 'application/json', "Access-Control-Allow-Origin": "*"}}).then(res => res.json()).then(data => {
+        fetch(`https://portfolio-backend-gc97c.ondigitalocean.app/get_projects?language=${filter}`, {headers: {'Content-Type': 'application/json'}}).then(res => res.json()).then(data => {
             getProjects(data.projects);
         }).catch((err) => console.log(err));
     }
