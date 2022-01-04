@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 function Resume() {
     
     return (
-        <Container className="my-4">
+        <Container className="my-2">
             <h1 className="display-6 text-center">Resume</h1>
             <Row className="my-4 justify-content-center">
                 <Col sm={12} md={4} className="d-flex flex-column mx-4">
