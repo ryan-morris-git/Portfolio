@@ -1,5 +1,7 @@
 import React from 'react';
 import './HomeBody.css';
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -16,38 +18,47 @@ function HomeBody() {
         </Row>
         <Row>
             <Col xs={12} sm={4} className="justify-content-center d-flex my-2">
-                <Card style={{ width: '22rem' }}>
+                <Card className="skill-card">
                   <Card.Body>
                     <Card.Title>Frontend</Card.Title>
                   </Card.Body>
-                  <ListGroup className="list-group-flush">
-                    <ListGroup.Item action href="/#/projects">HTML/CSS/JavaScript</ListGroup.Item>
-                    <ListGroup.Item action href="/#/projects">Vue.js</ListGroup.Item>
-                    <ListGroup.Item action href="/#/projects">React</ListGroup.Item>
+                  <ListGroup className="list-group-flush skill-title">
+                    <ListGroup.Item className="skill-item" action href="/#/projects">
+                      <FontAwesomeIcon className="check-icon" icon={faCheckCircle}/>HTML/CSS/JavaScript</ListGroup.Item>
+                    <ListGroup.Item className="skill-item" action href="/#/projects">
+                      <FontAwesomeIcon className="check-icon" icon={faCheckCircle}/>Vue.js</ListGroup.Item>
+                    <ListGroup.Item className="skill-item" action href="/#/projects">
+                      <FontAwesomeIcon className="check-icon" icon={faCheckCircle}/>React</ListGroup.Item>
                   </ListGroup>
                 </Card>
             </Col>
             <Col xs={12} sm={4} className="justify-content-center d-flex my-2">
-                <Card style={{ width: '22rem' }}>
+                <Card className="skill-card">
                   <Card.Body>
                     <Card.Title>Backend</Card.Title>
                   </Card.Body>
-                  <ListGroup className="list-group-flush">
-                    <ListGroup.Item action href="/#/projects">Python</ListGroup.Item>
-                    <ListGroup.Item action href="/#/projects">Flask</ListGroup.Item>
-                    <ListGroup.Item action href="/#/projects">SQL</ListGroup.Item>
+                  <ListGroup className="list-group-flush skill-title">
+                    <ListGroup.Item className="skill-item" action href="/#/projects">
+                      <FontAwesomeIcon className="check-icon" icon={faCheckCircle}/>Python</ListGroup.Item>
+                    <ListGroup.Item className="skill-item" action href="/#/projects">
+                      <FontAwesomeIcon className="check-icon" icon={faCheckCircle}/>Flask</ListGroup.Item>
+                    <ListGroup.Item className="skill-item" action href="/#/projects">
+                      <FontAwesomeIcon className="check-icon" icon={faCheckCircle}/>SQL</ListGroup.Item>
                   </ListGroup>
                 </Card>
             </Col>
             <Col xs={12} sm={4} className="justify-content-center d-flex my-2">
-                <Card style={{ width: '22rem' }}>
+                <Card className="skill-card">
                   <Card.Body>
                     <Card.Title>Other Technologies</Card.Title>
                   </Card.Body>
-                  <ListGroup className="list-group-flush">
-                    <ListGroup.Item>Google Cloud Platform</ListGroup.Item>
-                    <ListGroup.Item>Unit Testing</ListGroup.Item>
-                    <ListGroup.Item>Wireframing</ListGroup.Item>
+                  <ListGroup className="list-group-flush skill-title">
+                    <ListGroup.Item className="skill-item">
+                      <FontAwesomeIcon className="check-icon" icon={faCheckCircle}/>Google Cloud Platform</ListGroup.Item>
+                    <ListGroup.Item className="skill-item">
+                      <FontAwesomeIcon className="check-icon" icon={faCheckCircle}/>Unit Testing</ListGroup.Item>
+                    <ListGroup.Item className="skill-item">
+                      <FontAwesomeIcon className="check-icon" icon={faCheckCircle}/>Wireframing</ListGroup.Item>
                   </ListGroup>
                 </Card>
             </Col>

@@ -1,0 +1,20 @@
+.skill-card {
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    width: 22rem;
+    border: none !important;
+}
+
+.skill-item {
+    border: none !important;
+    padding: 12px 10px !important;
+    font-weight: 500;
+}
+
+.skill-title {
+    border: none !important;
+}
+
+.check-icon {
+    padding-right: 6px;
+    color: #444444 !important;
+}

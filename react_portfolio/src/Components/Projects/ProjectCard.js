@@ -62,7 +62,7 @@ function ProjectCard() {
                         <Card className="projectCard">
                             <Card.Body>
                                 <Card.Title>{project.title}</Card.Title>
-                                <Card.Subtitle className="mb-2 text-muted">{project.technologies.join(", ")}</Card.Subtitle>
+                                <Card.Subtitle className="my-3 text-muted">{project.technologies.join(", ")}</Card.Subtitle>
                                 <Card.Text>{project.description}</Card.Text>
                                 <Card.Link href={project.link}>Link to live demo</Card.Link>
                                 <Card.Link href={project.github_link}>Link to GitHub</Card.Link>
