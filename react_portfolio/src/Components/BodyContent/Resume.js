@@ -18,7 +18,7 @@ function Resume() {
                     <p className="text-center">Developing full stack web applications using Python, as well as MySQL for database operations, and the Vue.js framework for front end components.</p>
                     
                     <h6 className="text-center">Data Cataloguing Coordinator</h6>
-                    <p className="text-center employment-time">September 2020-Present</p>
+                    <p className="text-center employment-time">September 2020-March 2021</p>
                     <p className="text-center">Primarily focused on managing client relations, coordinating a team, project invoicing, and overseeing the completion of projects.</p>
                 </Col>
                 <Col sm={12} md={4} className="d-flex flex-column mx-4">
