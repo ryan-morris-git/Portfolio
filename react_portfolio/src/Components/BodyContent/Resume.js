@@ -13,7 +13,7 @@ function Resume() {
                 <Col sm={12} md={4} className="d-flex flex-column mx-4">
                     <h1 className="resume-subtitle text-center">Employment History</h1>
                     <h4 className="mt-4 text-center">Insane Technologies</h4>
-                    <h6 className="text-center">Junior Full Stack Developer</h6>
+                    <h6 className="text-center">Full Stack Developer</h6>
                     <p className="text-center employment-time">July 2021-Present</p>
                     <p className="text-center">Developing full stack web applications using Python, as well as MySQL for database operations, and the Vue.js framework for front end components.</p>
                     
